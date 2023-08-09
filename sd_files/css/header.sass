@@ -1,0 +1,134 @@
+.header
+    background: $color-gradient
+    .row        
+        height: 52px
+        @media (max-width: 768px)
+            margin-right: 0
+        .col-lg-1
+            display: flex
+            align-items: center
+            justify-content: center
+            padding-left: 60px
+            h1
+                margin-bottom: 0
+                display: flex
+                .mb
+                    display: none
+                .dk
+                    display: block
+                img
+                    width: 66px
+                @media (max-width: 768px)
+                    .mb
+                        display: block
+                    .dk
+                        display: none
+        .col-lg-11
+            padding-left: 0
+            padding-right: 20px
+            @media (max-width: 768px)
+                align-items: center
+                justify-content: flex-end
+                display: flex
+            nav
+                padding-right: 20px
+                @media (max-width: 768px)
+                    display: none
+                    z-index: 999
+                    left: 0
+                    width: 100%
+                    max-width: 768px
+                    padding-right: 0
+                    top: 52px
+                    position: absolute
+                    box-shadow: -1px 14px 9px -5px rgba(0, 0, 0, 0.1)
+                    -webkit-box-shadow: -1px 14px 9px -5px rgba(0, 0, 0, 0.1)
+                    -moz-box-shadow: -1px 14px 9px -5px rgba(0, 0, 0, 0.1)
+                ul
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+                    margin-bottom: 0   
+                    height: 52px
+                    @media (max-width: 768px)
+                        flex-direction: column
+                        width: 100%
+                        background-color: #fff
+                        height: 100vh
+                        justify-content: space-around
+                        padding-left: 0
+                                      
+                    li
+                        width: auto
+                        max-width: 250px
+                        
+                        border-right: 2px solid #fff
+                        padding-right: 30px
+                        padding-left: 20px
+
+                        &:nth-child(6)                            
+                            border-right: none
+                        &:last-child
+                            border-right: none
+                            background-color: #fff
+                            height: 52px
+                            padding-left: 30px                            
+                            padding-top: 14px
+                            &:hover
+                              background-color: $color-title
+                              a
+                                color: #fff  
+                            a
+                                margin-bottom: 0
+                                color: $color-title
+                            @media (max-width: 768px)
+                                padding-top: 0  
+
+                        a
+                            text-transform: uppercase
+                            padding-bottom: 10px
+                            font-weight: 700
+                            font-size: 14px
+                            color: #fff
+                            &:hover
+                                color: $color-title
+                            @media (max-width: 768px)
+                                color: $color-title
+
+
+
+//Nav
+ 
+.show 
+    display: flex !important
+                           
+                        
+.burger 
+    cursor: pointer
+    display: none
+    order: 3
+    @media (max-width: 768px)
+        display: block
+        width: 30px
+
+
+.burger div 
+    width: 25px
+    height: 3px
+    background-color: #fff
+    margin: 5px
+    &:nth-child(2)
+        margin-left: -3px
+        
+
+
+.toggle .line-1 
+    transform: rotate(-45deg) translate(-5px, 6px)
+
+
+.toggle .line-2 
+    opacity: 0
+
+
+.toggle .line-3 
+    transform: rotate(45deg) translate(-5px, -6px)
